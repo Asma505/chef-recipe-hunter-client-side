@@ -5,7 +5,7 @@ import ActiveLink from '../ActiveLink/ActiveLink';
 const Navbar = () => {
     return (
         <div className='flex items-center justify-around text-center w-4/5 mx-auto'>
-            <p className='bg-teal-800 text-white text-3xl p-5 font-bold'>Cook House</p>
+            <p className='bg-teal-800 text-white text-3xl p-5 font-bold italic'>Cook House</p>
             
             <ActiveLink to='/' ><p className='p-5 text-white font-bold'>Home</p></ActiveLink>
             
