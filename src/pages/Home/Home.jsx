@@ -34,7 +34,7 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div className='text-center w-10/12 mx-auto'>
+            <div className='text-center w-10/12 mx-auto mb-32'>
                 <p className='text-5xl font-bold text-teal-800 mt-24 mb-16'>Today's New Hottest Recipes Available Now</p>
                 <div className='md:flex md:justify-between'>
                     <div className='w-80'>
@@ -50,6 +50,13 @@ const Home = () => {
                         <p className='text-3xl font-bold text-teal-800 my-5'>Biryani</p>
                     </div>                   
                 </div>
+            </div>
+            <div className='bg-teal-800 md:flex md:justify-around w-2/3 mx-auto mb-32 py-16 px-10 rounded-full text-center'>
+                <h3 className='text-white text-3xl font-bold'>Subscribe to Newsletter</h3>
+                <form action="">
+                    <input className='rounded-full mr-3 pl-3 my-3' type="email"/>
+                    <button className='bg-white p-1 text-teal-800 font-bold rounded-full' type='submit'>Submit</button>
+                </form>
             </div>
         </div>
     );
