@@ -3,6 +3,7 @@ import Cards from '../Cards/Cards';
 import beef from '../../assets/pexels-photo-1731535.jpeg';
 import kabab from '../../assets/pexels-photo-2233729.jpeg';
 import biryani from '../../assets/pexels-photo-14731635.jpeg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [chefs, setChefs] = useState([]);
@@ -55,7 +56,7 @@ const Home = () => {
                 <h3 className='text-white text-3xl font-bold'>Subscribe to Newsletter</h3>
                 <form action="">
                     <input className='rounded-full mr-3 pl-3 my-3' type="email"/>
-                    <button className='bg-white p-1 text-teal-800 font-bold rounded-full' type='submit'>Submit</button>
+                    <Link className='bg-white p-1 text-teal-800 font-bold rounded-full' to='#'>Submit</Link>
                 </form>
             </div>
         </div>
