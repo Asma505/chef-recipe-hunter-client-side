@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: '/chefs/:id',
         element: <PrivateRoute><Recipes></Recipes></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/chefs/${params.id}`)
+        loader: ({params}) => fetch(`https://chef-recipe-hunter-server-gray-three.vercel.app/chefs/${params.id}`)
       },
       {
         path: '*',
