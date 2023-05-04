@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Cards = ({ chef }) => {
 
-    const { picture, name, years_of_experience, num_of_recipes, likes } = chef;
+    const { id, picture, name, years_of_experience, num_of_recipes, likes } = chef;
     return (
         <div>
             <div className="card w-80 glass mb-5">
@@ -14,7 +15,7 @@ const Cards = ({ chef }) => {
                     <p>Number of Recipes: {num_of_recipes} Recipes</p>
                     <div className='flex justify-between items-center'>
                         <div className="card-actions ">
-                            <button className="bg-teal-800 text-white p-3 rounded-lg">View Recipes</button>
+                            <Link to={`/chefs/${id}`}><button className="bg-teal-800 text-white p-3 rounded-lg">View Recipes</button></Link>
                         </div>
                         <div>
                             <p>Likes {likes}</p>
