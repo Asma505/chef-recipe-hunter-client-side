@@ -5,6 +5,7 @@ import kabab from '../../assets/pexels-photo-2233729.jpeg';
 import biryani from '../../assets/pexels-photo-14731635.jpeg';
 import { Link } from 'react-router-dom';
 
+
 const Home = () => {
     const [chefs, setChefs] = useState([]);
 
@@ -15,6 +16,7 @@ const Home = () => {
     }, [])
     return (
         <div>
+            {/* For Header */}
             <div className='bg-red-50 mb-5'>
                 <div className='w-4/5 mx-auto md:flex items-center gap-5'>
                     <div className='text-7xl font-bold text-teal-800 py-10'>
@@ -27,6 +29,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* For 6 Cards */}
             <div className='w-10/12 mx-auto'>
                 <p className='text-center text-5xl font-bold text-teal-800 mt-24 mb-16'>Chefs</p>
                 <div className='md:grid md:grid-cols-3'>
@@ -35,6 +38,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            {/* Hottest Recipes section */}
             <div className='text-center w-10/12 mx-auto mb-32'>
                 <p className='text-5xl font-bold text-teal-800 mt-24 mb-16'>Today's New Hottest Recipes Available Now</p>
                 <div className='md:flex md:justify-between'>
@@ -49,13 +53,14 @@ const Home = () => {
                     <div className='w-80'>
                         <img className='rounded-full' src={biryani} alt="" />
                         <p className='text-3xl font-bold text-teal-800 my-5'>Biryani</p>
-                    </div>                   
+                    </div>
                 </div>
             </div>
+            {/* For Newsletter Section*/}
             <div className='bg-teal-800 md:flex md:justify-around w-2/3 mx-auto mb-32 py-16 px-10 rounded-full text-center'>
                 <h3 className='text-white text-3xl font-bold'>Subscribe to Newsletter</h3>
                 <form action="">
-                    <input className='rounded-full mr-3 pl-3 my-3' type="email"/>
+                    <input className='rounded-full mr-3 pl-3 my-3' type="email" />
                     <Link className='bg-white p-1 text-teal-800 font-bold rounded-full' to='#'>Submit</Link>
                 </form>
             </div>

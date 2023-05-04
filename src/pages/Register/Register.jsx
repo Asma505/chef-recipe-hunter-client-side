@@ -35,11 +35,7 @@ const Register = () => {
         })
 
         setError('');
-
-        if(password.length < 6){
-            setError('The password is less than 6 characters');
-            return;
-        }
+        
 
         const updateUserData = (user, name, photoURL) => {
             updateProfile(user, {
